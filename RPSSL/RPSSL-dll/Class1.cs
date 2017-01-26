@@ -8,7 +8,7 @@ namespace RPSSL_dll
 {
     public class Class1
     {
-        public static string Spielablauf(string meldung, int wert,)
+        public static string Spielablauf(string meldung, int wert)
         {
             Random rnd = new Random();
             int gegner = rnd.Next(1, 6);
