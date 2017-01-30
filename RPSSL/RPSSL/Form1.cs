@@ -13,6 +13,8 @@ namespace RPSSL
 {
     public partial class Form1 : Form
     {
+        string m_meldung;
+        int m_wert;
         public Form1()
         {
             InitializeComponent();
@@ -20,29 +22,37 @@ namespace RPSSL
 
         private void pbx_robot_Click(object sender, EventArgs e)
         {
-            int wert = 1;
-            RPSSL_dll.Spielablauf(string meldung, int wert);
+            int m_wert = 1;
+            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
+            MessageBox.Show(m_meldung);
         }
-    }
 
         private void pbx_pirate_Click(object sender, EventArgs e)
         {
-
+            int m_wert = 2;
+            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
+            MessageBox.Show(m_meldung);
         }
 
         private void pbx_ninja_Click(object sender, EventArgs e)
         {
-
+            int m_wert = 3;
+            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
+            MessageBox.Show(m_meldung);
         }
 
         private void pbx_monkey_Click(object sender, EventArgs e)
         {
-
+            int m_wert = 4;
+            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
+            MessageBox.Show(m_meldung);
         }
 
         private void pbx_zombie_Click(object sender, EventArgs e)
         {
-
+            int m_wert = 5;
+            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
+            MessageBox.Show(m_meldung);
         }
 
         private void btn_instructions_Click(object sender, EventArgs e)
