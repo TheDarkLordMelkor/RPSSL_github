@@ -8,23 +8,30 @@ namespace RPSSL_dll
 {
     public class RPSSL_dll
     {
-        public static string Spielablauf(string meldung, int wert)
+        
+       
+
+        public static int[] Spielablauf(int meldung, int wert)
         {
+            int[] rueckgabe = new int[2];
             Random rnd = new Random();
+            
             int gegner = rnd.Next(1, 6);
             if (wert == 1 && gegner == 1 || wert == 2 && gegner == 2 || wert == 3 && gegner == 3 || wert == 4 && gegner == 4 || wert == 5 && gegner == 5)
             {
-                meldung = "Unentschieden";
+                rueckgabe[0] = 0;
             }
             if (wert == 1 && gegner == 5 || wert == 1 && gegner == 3 || wert == 2 && gegner == 1 || wert == 2 && gegner == 4 || wert == 3 && gegner == 2 || wert == 3 && gegner == 5 || wert == 4 && gegner == 3 || wert == 4 && gegner == 1 || wert == 5 && gegner == 2 || wert == 5 && gegner == 4)
             {
-                meldung = "Gewonnen";
+                rueckgabe[0] = 1;
             }
             if (wert == 5 && gegner == 1 || wert == 3 && gegner == 1 || wert == 1 && gegner == 2 || wert == 4 && gegner == 2 || wert == 2 && gegner == 3 || wert == 5 && gegner == 3 || wert == 3 && gegner == 4 || wert == 1 && gegner == 4 || wert == 2 && gegner == 5 || wert == 4 && gegner == 5)
             {
-                meldung = "Verloren";
+                rueckgabe[0] = 2;
             }
-            return meldung;
+            rueckgabe[1] = gegner;
+
+            return rueckgabe;
         }
 
         //Patrick sein Zeugs
