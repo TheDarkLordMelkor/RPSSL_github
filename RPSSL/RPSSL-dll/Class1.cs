@@ -11,7 +11,7 @@ namespace RPSSL_dll
         
        
 
-        public static int[] Spielablauf(int meldung, int wert)
+        public static int[] Spielablauf(int[] meldung, int wert)
         {
             int[] rueckgabe = new int[2];
             Random rnd = new Random();
