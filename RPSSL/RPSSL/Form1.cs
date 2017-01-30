@@ -13,7 +13,7 @@ namespace RPSSL
 {
     public partial class Form1 : Form
     {
-        string m_meldung;
+        int[] m_meldung;
         int m_wert;
         public Form1()
         {
