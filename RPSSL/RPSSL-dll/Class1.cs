@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RPSSL_dll
 {
-    public class Class1
+    public class RPSSL_dll
     {
         public static string Spielablauf(string meldung, int wert)
         {
