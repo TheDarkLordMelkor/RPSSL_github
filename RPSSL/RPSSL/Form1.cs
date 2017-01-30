@@ -20,8 +20,10 @@ namespace RPSSL
 
         private void pbx_robot_Click(object sender, EventArgs e)
         {
-
+            int wert = 1;
+            RPSSL_dll.Spielablauf(string meldung, int wert);
         }
+    }
 
         private void pbx_pirate_Click(object sender, EventArgs e)
         {
