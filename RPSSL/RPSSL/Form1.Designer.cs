@@ -140,22 +140,22 @@
             // pbx_minun
             // 
             this.pbx_minun.BackColor = System.Drawing.Color.Transparent;
-            this.pbx_minun.Location = new System.Drawing.Point(361, 209);
+            this.pbx_minun.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbx_minun.Location = new System.Drawing.Point(335, 209);
             this.pbx_minun.Name = "pbx_minun";
-            this.pbx_minun.Size = new System.Drawing.Size(119, 109);
+            this.pbx_minun.Size = new System.Drawing.Size(137, 129);
             this.pbx_minun.TabIndex = 7;
             this.pbx_minun.TabStop = false;
-            this.pbx_minun.Click += new System.EventHandler(this.pbx_minun_Click);
             // 
             // pbx_melkor
             // 
             this.pbx_melkor.BackColor = System.Drawing.Color.Transparent;
-            this.pbx_melkor.Location = new System.Drawing.Point(508, 257);
+            this.pbx_melkor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pbx_melkor.Location = new System.Drawing.Point(517, 237);
             this.pbx_melkor.Name = "pbx_melkor";
-            this.pbx_melkor.Size = new System.Drawing.Size(119, 109);
+            this.pbx_melkor.Size = new System.Drawing.Size(137, 129);
             this.pbx_melkor.TabIndex = 8;
             this.pbx_melkor.TabStop = false;
-            this.pbx_melkor.Click += new System.EventHandler(this.pbx_melkor_Click);
             // 
             // btn_confirm
             // 

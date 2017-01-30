@@ -23,36 +23,31 @@ namespace RPSSL
         private void pbx_robot_Click(object sender, EventArgs e)
         {
             int m_wert = 1;
-            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
-            MessageBox.Show(m_meldung);
+            pbx_melkor.Image = Image.FromFile("C:/Users/Saturn/Documents/Visual Studio 2015/Projects/RPSSL/robot.png");
         }
 
         private void pbx_pirate_Click(object sender, EventArgs e)
         {
             int m_wert = 2;
-            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
-            MessageBox.Show(m_meldung);
+            pbx_melkor.Image = Image.FromFile("C:/Users/Saturn/Documents/Visual Studio 2015/Projects/RPSSL/pirate.png");
         }
 
         private void pbx_ninja_Click(object sender, EventArgs e)
         {
             int m_wert = 3;
-            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
-            MessageBox.Show(m_meldung);
+            pbx_melkor.Image = Image.FromFile("C:/Users/Saturn/Documents/Visual Studio 2015/Projects/RPSSL/ninja.png");
         }
 
         private void pbx_monkey_Click(object sender, EventArgs e)
         {
             int m_wert = 4;
-            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
-            MessageBox.Show(m_meldung);
+            pbx_melkor.Image = Image.FromFile("C:/Users/Saturn/Documents/Visual Studio 2015/Projects/RPSSL/monkey.png");
         }
 
         private void pbx_zombie_Click(object sender, EventArgs e)
         {
             int m_wert = 5;
-            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
-            MessageBox.Show(m_meldung);
+            pbx_melkor.Image = Image.FromFile("C:/Users/Saturn/Documents/Visual Studio 2015/Projects/RPSSL/zombie.png");
         }
 
         private void btn_instructions_Click(object sender, EventArgs e)
@@ -62,17 +57,8 @@ namespace RPSSL
 
         private void btn_confirm_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pbx_minun_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbx_melkor_Click(object sender, EventArgs e)
-        {
-
+            RPSSL_dll.RPSSL_dll.Spielablauf(m_meldung, m_wert);
+            MessageBox.Show(m_meldung);
         }
     }
 }
